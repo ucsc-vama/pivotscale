@@ -46,4 +46,4 @@ How to Cite
 
 If you use this code, please cite our paper:
 
-Amogh Lonkar, Scott Beamer. *PivotScale: A Holistic Approach for Scalable Clique Counting*. International Parallel & Distributed Processing Symposium (IPDPS), June 2025.
+> Amogh Lonkar, Scott Beamer. *PivotScale: A Holistic Approach for Scalable Clique Counting*. International Parallel & Distributed Processing Symposium (IPDPS), June 2025.
