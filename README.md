@@ -6,7 +6,7 @@ This is the optimized parallel implementation for PivotScale, a high-performance
 
 Quick Start
 -----------
-Building PivotScale requires compiler support for C++20 and OpenMP.
+Building PivotScale requires a compiler that supports C++20 and OpenMP.
 
 Compile PivotScale:
 
@@ -26,9 +26,9 @@ PivotScale uses the number of threads provided by the OpenMP runtime. The best w
 
     $ OMP_NUM_THREADS=16 ./pivotscale -f dblp.sg -c 8
 
-On most platforms, the default number of threads for OpenMP is the number of hardware thread contexts including hyperthreading if present. Hyperthreading (SMT) can provide benefit for this workload, but we recommend experimenting with the number of threads to find the best performance.
+On most platforms, the default number of threads for OpenMP is the number of hardware thread contexts (including hyperthreading if present). Hyperthreading (SMT) can provide benefit for this workload, but we recommend experimenting with the number of threads to find the best performance.
 
-To minimize graph loading time, we recommend using gapbs's serialized graph format (`.sg`) which can be made using the including `converter` tool. We also provide a script to convert a graph from [SNAP](https://snap.stanford.edu/data/index.html) into that `.sg` format:
+To minimize graph loading time, we recommend using gapbs's serialized graph format (`.sg`) which can be made using the included `converter` tool. We also provide a script to convert a graph from [SNAP](https://snap.stanford.edu/data/index.html) into that `.sg` format:
 
     $ bash ConvertSNAP.sh path_to_graph_from_snap.txt
 
